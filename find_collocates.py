@@ -58,7 +58,7 @@ def main() -> None:
         target_words=TARGET_WORD,
         method="window",
         horizon=HORIZON,
-        filters={"max_p": P_VALUE, "stopwords": list(stopwords)},
+        filters={"stopwords": list(stopwords)},
     )
 
     if isinstance(result, pd.DataFrame):
